@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/10a4595e8d.js" crossorigin="anonymous"></script>
+    <!-- Use daisyUI from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind css cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Nature Platter</title>
+</head>
+
+<body>
+    <!-- nav bar code  -->
+    <header class="bg-linear-to-r from-[#FFFFFF] to-[#EFEBE3]">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start flex">
+
+                <div><a class="btn btn-ghost text-xl"><img src="/c2-assets/logo-header.png" alt=""></a></div>
+
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 relative right-85">
+                    <li><a class="text-xl font-medium">Product</a></li>
+                    <li><a class="text-xl font-medium">Services</a></li>
+                    <li><a class="text-xl font-medium" href="">Contact us</a></li>
+                </ul>
+                <ul class="list-none flex gap-8 mr-10  menu menu-horizontal px-1">
+                    <li><i class="fa-solid fa-magnifying-glass text-xl"></i></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping text-xl"></i></a></li>
+
+                    <a class=" cursor-pointer border-2 border-[#179800]  px-6 py-2 rounded-md">Login</a>
+                    <a class="cursor-pointer bg-[#179800] text-white px-5 py-2 rounded-md">Register</a>
+                </ul>
+            </div>
+            <!-- dropdown bar css -->
+            <div class="relative left-40">
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Products</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container m-auto">
+        <section>
+            <h1 class="text-center text-5xl font-semibold lg:mt-[90px]">Freshness <span class="text-[#179800]">You Can
+                    <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-center text-[#111111] py-[32px]">Shop your daily essentials at unbeatable prices. From fresh
+                produce to pantry staples, we’ve got you covered every day!</p>
+            <div class="flex justify-center"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+        </section>
+    </main>
+</body>
+
+</html>
