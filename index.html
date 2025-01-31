@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/10a4595e8d.js" crossorigin="anonymous"></script>
     <!-- Use daisyUI from CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind css cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- fav-icon add -->
+     <link rel="shortcut icon" href="c2-assets/fav-icon.png" type="image/x-icon">
     <title>Nature Platter</title>
 </head>
 
@@ -22,14 +26,26 @@
             <header class=" lg:mb-10 mr-5">
                 <div class="navbar bg-base-100  flex justify-between ">
                     <div class="navbar-start ">
-                        <div><img src="c2-assets/logo-header.png" alt=""></a></div>
+                        <div class="animate-pulse "><img src="c2-assets/logo-header.png" alt=""></a></div>
                     </div>
                     <div class="lg:hidden block"><i class="fa-solid fa-bars text-3xl"></i></div>
                     <div class="navbar-end hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 relative right-85">
-                            <li><a class="text-xl font-medium">Product</a></li>
-                            <li><a class="text-xl font-medium">Services</a></li>
-                            <li><a class="text-xl font-medium" href="">Contact us</a></li>
+                            <li><a class="text-xl font-medium"><span class="relative flex size-3">
+                                        <span
+                                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                                        <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                                    </span> Product</a></li>
+                            <li><a class="text-xl font-medium"><span class="relative flex size-3">
+                                        <span
+                                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                                        <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                                    </span> Services</a></li>
+                            <li><a class="text-xl font-medium" href=""><span class="relative flex size-3">
+                                        <span
+                                            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                                        <span class="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                                    </span> Contact us</a></li>
                         </ul>
                         <ul class="list-none flex gap-8 mr-10  menu menu-horizontal px-1">
                             <li><i class="fa-solid fa-magnifying-glass text-xl"></i></li>
@@ -39,13 +55,12 @@
                             <a class="cursor-pointer bg-[#179800] text-white px-5 py-2 rounded-md">Register</a>
                         </ul>
                     </div>
-                    <!-- dropdown bar css -->
                 </div>
             </header>
             <section>
                 <div>
                     <h1 class="text-center lg:text-5xl text-4xl font-semibold lg:mt-[90px] mt-[40px]">Freshness <span
-                            class="text-[#179800] animate-pulse">You Can
+                            class="animate-color">You Can
                             <br>
                             Count</span> On, Prices You’ll Love!</h1>
                     <p class="text-center text-[#111111] py-[32px] p-5">Shop your daily essentials at unbeatable prices.
@@ -298,6 +313,46 @@
                 </div>
             </div>
         </section>
+  <!-- Our shop with connected people and states what we want to do  -->
+   <section class="container mx-auto lg:mt-[0px] mt-[250px] lg:mb-[10px] -mb-[150px]">
+    <div class="stats shadow flex lg:flex-row flex-col">
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current ">
+                    <i class="fa-regular fa-face-smile text-3xl text-blue-700"></i>
+                </svg>
+            </div>
+            <div class="stat-title">Happy Client</div>
+            <div class="stat-value">17K+</div>
+            <div class="stat-desc">2015 - Present</div>
+        </div>
+    
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block h-8 w-8 stroke-current text-green-400">
+                    <i class="fa-solid fa-user text-3xl text-green-700"></i>
+                </svg>
+            </div>
+            <div class="stat-title">New Client</div>
+            <div class="stat-value">3,296</div>
+            <div class="stat-desc">Last Months</div>
+        </div>
+    
+        <div class="stat">
+            <div class="stat-figure text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block h-8 w-8 stroke-current text-yellow-400">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+                </svg>
+            </div>
+            <div class="stat-title">New People</div>
+            <div class="stat-value">275</div>
+            <div class="stat-desc">Today</div>
+        </div>
+    </div>
+   </section>
         <!-- half section part -->
         <section class="bg-[#EFEBE3] rounded-xl container mx-auto relative lg:top-[220px] top-80">
             <div class="flex lg:flex-row flex-col lg:gap-[120px]  lg:px-[120px] py-[50px] lg:py-[55px]  items-center">
@@ -345,4 +400,5 @@
         </div>
     </footer>
 </body>
+
 </html>
